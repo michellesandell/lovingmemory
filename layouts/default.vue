@@ -14,10 +14,9 @@ $subtext0:  #a6adc8;
 $pink:      #f5c2e7;
 $mauve:     #cba6f7;
 
-// ── Semantic aliases (keeps your old variable names) ──
 $highlight:       $pink;
-$highlightmuted:  rgba($pink, 0.85);   // same transparent idea
-$background:      $base;               // replaces #2b3143
+$highlightmuted:  rgba($pink, 0.85);
+$background:      $base;
 
 html {
   font-family: 'Lato', sans-serif;
@@ -70,7 +69,6 @@ html {
     position: relative;
 }
 
-
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -121,7 +119,7 @@ html {
       left: 0;
       width: 100%;
       height: 80px!important;
-      background: #1e2333d9;
+      background: rgba($mantle, 0.85);
       padding-bottom: 0px!important;
       z-index: 2;
       backdrop-filter: blur(5px);
@@ -142,10 +140,10 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #fffc;
+            color: $subtext0;
             font-size: 12px;
             &.nuxt-link-exact-active {
-              color: #fff;
+              color: $text;
               .icon {
                 color: lighten($highlight, 5%);
               }
@@ -171,16 +169,14 @@ html {
       justify-content: normal;
     }
     img {
-      //-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-      //filter: grayscale(100%);
       box-sizing: content-box;
-      border: 8px solid #fff;
+      border: 8px solid $surface0;
       box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.6);
     }
   }
   &.details {
     background: $background;
-    color: white;
+    color: $text;
     align-items: flex-start;
     text-align: left;
     padding: 40px;
@@ -195,6 +191,7 @@ html {
         background: $highlightmuted;
         padding: 20px;
         font-weight: 400;
+        color: $base;
       }
     }
     .fa-li {
@@ -221,6 +218,7 @@ html {
         font-size: 16px;
         margin-left: 15px;
         border-radius: 4px;
+        color: $base;
       }
     }
   }
@@ -230,10 +228,10 @@ html {
     font-size: 18px;
     background: $highlight;
     text-decoration: none;
-    color: #fff;
+    color: $base;
     margin: 10px 0;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
-    border-top: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 5px 2px rgba($mantle, 0.6);
+    border-top: 1px solid rgba($text, 0.2);
     display: inline-block;
   }
 }
@@ -251,7 +249,7 @@ ul {
     display: flex;
     align-items: center;
     &.nuxt-link-exact-active {
-      color: #111;
+      color: $text;
     }
   }
 }
@@ -262,19 +260,17 @@ ul {
   margin-left: 15px;
   border-radius: 4px;
   display: inline-block;
+  color: $base;
 }
 
 .menu {
-  //display: flex;
-  //flex-direction: column;
   small {
-    color: #aeafb3;
-    font-weight: 400;
+    color: $subtext0;
   }
 }
 .name {
   font-size: 40px;
-  color: #fff;
+  color: $text;
   font-weight: 300;
 }
 .title {
@@ -282,10 +278,9 @@ ul {
   display: block;
   font-weight: 300;
   font-size: 50px;
-  color: #35495e;
+  color: $text;
   letter-spacing: 1px;
   margin: 40px 0;
-  color: #fff;
   @media screen and (max-width: 800px) {
     font-size: 40px;
     margin: 30px 0;
@@ -295,13 +290,14 @@ ul {
 .subtitle {
   font-weight: 300;
   font-size: 14px;
-  color: #adb4c7;
+  color: $subtext0;
   margin: 40px 0;
   @media screen and (max-width: 800px) {
     margin: 25px 0;
   }
 }
 
+// ... rest of SVG/FontAwesome rules unchanged ...
 .svg-inline--fa {
     display: inline-block;
     font-size: inherit;
@@ -326,7 +322,6 @@ ul {
 .svg-inline--fa.fa-w-8 {
     width: .5em;
 }
-
 .svg-inline--fa.fa-fw {
     width: 1.25em;
 }
