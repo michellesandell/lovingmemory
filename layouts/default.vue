@@ -5,9 +5,9 @@
 </template>
 
 <style lang="scss">
-$highlight: #FFBCD4;
+$highlight: #2b3143;
 $highlightmuted: #f41b8ed9;
-$background: #2b3143;
+$background: #f41b8e;
 
 html {
   font-family: 'Lato', sans-serif;
