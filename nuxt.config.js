@@ -1,12 +1,14 @@
 import { defineNuxtConfig } from '@nuxt/bridge'
 
-const name = 'Michelle Sandell (née Pumpa)'
+const married = 'Michelle Sandell'
+const maiden = ' (née Pumpa)'
 const dates = '31st March 1956 - 10th September 2025'
 
 export default defineNuxtConfig ({
   bridge: false,
   publicRuntimeConfig: {
-    name: name,
+    married: married,
+    maiden: maiden,
     dates: dates
   },
   // Target (https://go.nuxtjs.dev/config-target)
@@ -19,12 +21,12 @@ export default defineNuxtConfig ({
     },
     get title() {
       delete this.title
-      return this.title =  'In Loving Memory of ' + name
+      return this.title =  'In Loving Memory of ' + married + maiden
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Look back on and discover the life history of ' + name }
+      { hid: 'description', name: 'description', content: 'Look back on and discover the life history of ' + married + maiden}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
