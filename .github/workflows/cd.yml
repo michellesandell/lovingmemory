@@ -13,14 +13,11 @@ permissions:
   pages: write
 
 jobs:
-  cd:
-    runs-on: ${{ matrix.os }}
-
+  build:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest]
         node: [24]
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,16 +38,16 @@ jobs:
         run: yarn run generate
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
   deploy:
-    needs: cd
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
