@@ -4,31 +4,36 @@ on:
   push:
     branches: [ master ]
 
-# Cancel in-progress runs on the same branch
+# Cancel in-progress runs on the same branch to save resources
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   cd:
-    runs-on: ubuntu-latest
+    # Pin to a specific runner image for maximum reproducibility
+    runs-on: ubuntu-24.04
 
     strategy:
       matrix:
-        node: [20]   # latest LTS, Node 16 is end-of-life
+        node: [20] # Updated to the latest LTS version
+
+    # Opt in to the Node 24 runtime now to test and silence warnings
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5 # v5+ runs on Node 24
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node.js (${{ matrix.node }})
+        uses: actions/setup-node@v5 # v5+ runs on Node 24
         with:
           node-version: ${{ matrix.node }}
-          cache: 'yarn'   # enables automatic yarn caching
+          cache: 'yarn' # Automatic caching for faster installs
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile # Ensures reproducible builds
 
       - name: Fix images
         run: node index.js
@@ -37,7 +42,7 @@ jobs:
         run: yarn run generate
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4 # This action has NOT yet been updated for Node 24
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
