@@ -19,12 +19,12 @@ export default defineNuxtConfig ({
     },
     get title() {
       delete this.title
-      return this.title =  'In loving memory of ' + name
+      return this.title =  'In Loving Memory of ' + name
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Remember and discover the life history of ' + name }
+      { hid: 'description', name: 'description', content: 'Look back on and discover the life history of ' + name }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

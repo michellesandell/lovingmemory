@@ -8,11 +8,13 @@
 // ── Catppuccin Mocha palette ─────────────────
 $base:      #1e1e2e;
 $mantle:    #181825;
-$surface0:  #313244;
+$surface0:  #fff;		// box surrounding front image
+$surface2:	#585b70;	// background on RHS of >800px websites
 $text:      #cdd6f4;
 $subtext0:  #a6adc8;
 $pink:      #f5c2e7;
 $mauve:     #cba6f7;
+
 
 $highlight:       $pink;
 $highlightmuted:  rgba($pink, 0.85);
@@ -27,6 +29,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: $surface2;
+  
 }
 
 *,
@@ -34,6 +38,7 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  
 }
 
 .fa-ulist {

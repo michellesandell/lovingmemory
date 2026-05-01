@@ -5,7 +5,7 @@
     </div>
     <div class="section details">
       <!-- CONTENT START -->
-      <h1 class="title">Gallery</h1>
+      <h1 class="title">Photo Gallery</h1>
       <!-- CONTENT END -->
       <CoolLightBox 
         :items="images" 
