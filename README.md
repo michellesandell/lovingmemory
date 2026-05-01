@@ -31,7 +31,7 @@ To build your own, fork this repository, then make changes to:
 * `assets/images/` - Drop all the images you want to show in the gallery in this folder - As part of the GitHub action it will rename the images that have problematic names, resize images to a max width of 1800px, and will create thumbnail versions to ensure the gallery is optimised. The original files in the `images` directory are not touched. Note: large images can crash due, resize them manually first with the largest edge at 1800px.
 
 ## Going Live
-* Make sure you have GitHub actions running.
+* Make sure you have GitHub actions running. There's a `Run workflow` button in the `Actions` tab if you don't have anything to push.
 * Make sure you have set `static/CNAME` to what it needs to be.
 * On your nameservers point a CNAME from your custom domain to `<username>.github.io`
 * Once the GitHub action runs it should all be setup, but if not, go to your repos `Settings`, scroll down to `Pages` on the left menu, then under `Build and Deployment` select the source as `GitHub Actions`.
