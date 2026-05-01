@@ -4,36 +4,39 @@ on:
   push:
     branches: [ master ]
 
-# Cancel in-progress runs on the same branch to save resources
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# Grant the GITHUB_TOKEN the permissions required for Pages deployment
+permissions:
+  contents: read      # To checkout the code
+  pages: write        # To deploy to GitHub Pages
+  id-token: write     # Required for OIDC authentication
+
 jobs:
   cd:
-    # Pin to a specific runner image for maximum reproducibility
     runs-on: ubuntu-24.04
 
     strategy:
       matrix:
-        node: [20] # Updated to the latest LTS version
+        node: [20]       # Latest LTS
 
-    # Opt in to the Node 24 runtime now to test and silence warnings
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Opt in to Node 24 early
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5 # v5+ runs on Node 24
+        uses: actions/checkout@v5
 
       - name: Setup Node.js (${{ matrix.node }})
-        uses: actions/setup-node@v5 # v5+ runs on Node 24
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ matrix.node }}
-          cache: 'yarn' # Automatic caching for faster installs
+          cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile # Ensures reproducible builds
+        run: yarn install --frozen-lockfile
 
       - name: Fix images
         run: node index.js
@@ -41,7 +44,7 @@ jobs:
       - name: Generate
         run: yarn run generate
 
-      # Replaces the single "Deploy to GitHub Pages" step above
+      # Official GitHub Pages deployment using OIDC
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
