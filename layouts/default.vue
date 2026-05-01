@@ -5,9 +5,19 @@
 </template>
 
 <style lang="scss">
-$highlight: #f41b8e;
-$highlightmuted: #f41b8ed9;
-$background: #2b3143;
+// ── Catppuccin Mocha palette ─────────────────
+$base:      #1e1e2e;
+$mantle:    #181825;
+$surface0:  #313244;
+$text:      #cdd6f4;
+$subtext0:  #a6adc8;
+$pink:      #f5c2e7;
+$mauve:     #cba6f7;
+
+// ── Semantic aliases (keeps your old variable names) ──
+$highlight:       $pink;
+$highlightmuted:  rgba($pink, 0.85);   // same transparent idea
+$background:      $base;               // replaces #2b3143
 
 html {
   font-family: 'Lato', sans-serif;
