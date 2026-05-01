@@ -14,7 +14,7 @@ $ yarn install
 # Note: large images will crash, resize them manually first - largest edge 1800px.
 $ node index.js
 
-# serve with hot reload at [localhost:3000](localhost:3000)
+# serve with hot reload at http://localhost:3000
 $ yarn dev
 
 # generate static project
