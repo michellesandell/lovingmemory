@@ -2,7 +2,7 @@
 Updated with newer code and tweaks so it works well in 2025-26.
 This fork has been updated to not require the gh-pages branch.
 
-Originally forked from [Coderior's Loving Memory] (https://github.com/Coderior/lovingmemory)
+Originally forked from [Coderior's Loving Memory](https://github.com/Coderior/lovingmemory)
 
 ## Local Build Setup on a *nix Machine
 
@@ -14,7 +14,7 @@ $ yarn install
 # Note: large images will crash, resize them manually first - largest edge 1800px.
 $ node index.js
 
-# serve with hot reload at [localhost:3000] (localhost:3000)
+# serve with hot reload at [localhost:3000](localhost:3000)
 $ yarn dev
 
 # generate static project
