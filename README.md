@@ -2,7 +2,7 @@
 Updated with newer code and tweaks so it works well in 2025-26.
 This fork has been updated to not require the gh-pages branch.
 
-Originally forked from [Coderior's Loving Memory](https://github.com/Coderior/lovingmemory)
+Initially forked from [Coderior's Loving Memory](https://github.com/Coderior/lovingmemory). Thank you.
 
 ## Local Build Setup on a *nix Machine
 
@@ -21,7 +21,7 @@ $ yarn dev
 $ yarn generate
 ```
 
-## Building Your Site - The "yarn dev" stage, getting it right.
+## Building Your Site - The "yarn dev" stage, getting it right... enough.
 To build your own, fork this repository, then make changes to:
 * `nuxt.config.js` - Change the 2-3 variables at the top with your loved ones name (and maiden name if required) and their dates from and to.
 * `assets/frontimage.jpg` - Replace with your own image, this is the image that shows on the front page, image should be 244px by 292px.
@@ -36,4 +36,4 @@ To build your own, fork this repository, then make changes to:
 * On your nameservers point a CNAME from your custom domain to `<username>.github.io`
 * Once the Github action runs it should all be setup, but if not, go to your repos 'Settings / Options`, scroll down to `Pages` on the left menu then under `Build and Deployment` select the source as `GitHub Actions`.
 
-Now, any time you make a change to the code and push the change, GitHub actions `should` pick up the change and run a workflow `cd.yml` that generates the static files, and fixes image names.
+Now, any time you make a change to the code and push the change, GitHub actions `should` pick up the change and run a workflow, `cd.yml`, that generates the static files, and fixes image names.
