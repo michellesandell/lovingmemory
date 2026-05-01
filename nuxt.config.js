@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from '@nuxt/bridge'
 
-const name = 'Janet Doe'
-const dates = 'July 29th 1958 - Jan 4th 2021'
+const name = 'Michelle Sandell (née Pumpa)'
+const dates = '31st March 1956 - 10th September 2025'
 
 export default defineNuxtConfig ({
   bridge: false,
@@ -24,7 +24,7 @@ export default defineNuxtConfig ({
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Find details on the funeral arrangements for ' + name }
+      { hid: 'description', name: 'description', content: 'Remember and discover the life history of ' + name }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

@@ -6,10 +6,10 @@ const thumbdir = './assets/thumbs'
 const imagewidth = 1800
 
 if (fs.existsSync(dir)){
-    fs.rmdirSync(dir, { recursive: true });
+    fs.rmSync(dir, { recursive: true, force: true });
 }
 if (fs.existsSync(thumbdir)){
-    fs.rmdirSync(thumbdir, { recursive: true });
+    fs.rmSync(thumbdir, { recursive: true, force: true });
 }
 
 if (!fs.existsSync(dir)){
