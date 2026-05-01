@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss">
-$highlight: #f41b8e;
+$highlight: #FFBCD4;
 $highlightmuted: #f41b8ed9;
 $background: #2b3143;
 
