@@ -34,6 +34,6 @@ To build your own, fork this repository, then make changes to:
 * Make sure you have GitHub actions running.
 * Make sure you have set `static/CNAME` to what it needs to be.
 * On your nameservers point a CNAME from your custom domain to `<username>.github.io`
-* Once the Github action runs it should all be setup, but if not, go to your repos 'Settings / Options`, scroll down to `Pages` on the left menu then under `Build and Deployment` select the source as `GitHub Actions`.
+* Once the Github action runs it should all be setup, but if not, go to your repos `Settings / Options`, scroll down to `Pages` on the left menu, then under `Build and Deployment` select the source as `GitHub Actions`.
 
 Now, any time you make a change to the code and push the change, GitHub actions `should` pick up the change and run a workflow, `cd.yml`, that generates the static files, and fixes image names.
