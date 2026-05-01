@@ -1,8 +1,9 @@
-# GitHub hosted memorial site
-Updated with newer code and tweaks so it works in 2025-26.
+# GitHub Hosted Memorial Site
+Updated with newer code and tweaks so it works well in 2025-26.
+This fork has been updated to not require the gh-pages branch.
 
 
-## Local Build Setup
+## Local Build Setup on a *nix Machine
 
 ```bash
 # install dependencies
@@ -31,8 +32,6 @@ To build your own, fork this repository, then make changes to:
 * Make sure you have GitHub actions running
 * Make sure you have set `static/CNAME` to what it needs to be
 * On your nameservers point a CNAME from your custom domain to `<username>.github.io`
-* Once the Github action runs it should all be setup, but if not, go to your repos `Settings / Options`, scroll down to `GitHub Pages` and for source select `Branch: gh-pages`
+* Once the Github action runs it should all be setup, but if not, go to your repos `Settings / Options`, scroll down to `GitHub Pages` and for source select `Branch: gh-pages` - don't do this the cd.yml sorts this out.
 
-Now, any time you make a change to the source and push the change, GitHub actions should pick up the change and run a workflow that generates the static files, fixes image names and updates the gh-pages branch.
-
-This fork has been updated to not require the gh-pages branch.
+Now, any time you make a change to the source and push the change, GitHub actions should pick up the change and run a workflow that generates the static files, and fixes image names.
