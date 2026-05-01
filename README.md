@@ -1,14 +1,8 @@
-# Self hosted memorial and funeral arrangements site
-I originally built this as a central place people could go to find out about funeral arrangements for my mom. I have open sourced it in the hope I hope someone else in a similar situation is able to find it useful.
+# GitHub hosted memorial site
+Updated with newer code and tweaks so it works in 2025-26.
 
-* [demo.lovingmemory.link](https://demo.lovingmemory.link)
-* [lynhunt.lovingmemory.link](https://lynhunt.lovingmemory.link)
 
-If you need help getting this set up feel free to reach out on discord - https://discord.gg/XG9vyq3M9N
-
-You can get more information from [https://lovingmemory.link](https://lovingmemory.link)
-
-## Build Setup
+## Local Build Setup
 
 ```bash
 # install dependencies
@@ -23,11 +17,6 @@ $ yarn dev
 # generate static project
 $ yarn generate
 ```
-
-This repository allows you to have a beautiful and simple site that requires no hosting account (it uses Github pages), just a custom domain. It allows you to put details of the funeral arrangements, charity donations links and comes built ready for mobile.
-
-![LovingMemory Desktop animation](https://i.imgur.com/uaUOGdn.gif)
-![LovingMemory Mobile animation](https://i.imgur.com/Eu9WsP2.gif)
 
 ## Building your own
 To build your own, fork this repository, then make changes to:
@@ -45,3 +34,5 @@ To build your own, fork this repository, then make changes to:
 * Once the Github action runs it should all be setup, but if not, go to your repos `Settings / Options`, scroll down to `GitHub Pages` and for source select `Branch: gh-pages`
 
 Now, any time you make a change to the source and push the change, GitHub actions should pick up the change and run a workflow that generates the static files, fixes image names and updates the gh-pages branch.
+
+This fork has been updated to not require the gh-pages branch.
