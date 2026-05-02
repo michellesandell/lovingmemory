@@ -5,16 +5,18 @@
     </div>
     <div class="section details">
       <!-- CONTENT START -->
-      <h1 class="title">Early Life History</h1>
-      <h3>Written 15th July 2012, by Michelle</h3>
+      <h1 class="title">Michelle's Life History</h1>
 
-<p>In 1955 my parents and my sister drove across the Nullabor Plain to Western Australia in their blue Morris Minor four door sedan towing a trailer packed with all their worldly possessions. Faithfully guarding people and possessions was their blue heeler, Weeny, travelling the entire distance on top of the car or trailer. As the main highway from east to west Australia included one thousand miles of unsurfaced road and extremely limited water supply this was not a journey for the faint hearted. A working travelling holiday I was later told.</p>
+<br>
+<h3>Written 15th July 2012, by Michelle</h3>
+
+<p>In 1955 my parents and my sister drove across the Nullarbor Plain to Western Australia in their blue Morris Minor four door sedan towing a trailer packed with all their worldly possessions. Faithfully guarding people and possessions was their blue heeler, Weeny, travelling the entire distance on top of the car or trailer. As the main highway from east to west Australia included one thousand miles of unsurfaced road and extremely limited water supply this was not a journey for the faint hearted. A working travelling holiday I was later told.</p>
 
 <p>I was born in Albany Western Australia in March 1956. Albany was a scenically beautiful area facing the chill winds of the Great Southern Ocean, a whaling town, the first settled area of Western Australia.  We were living in a housing commission house in a housing commission area.  My parents neighbours and friends were mostly indigenous people. Strangely as this seems today indigenous people weren’t allowed to use public transport. The Morris Minor was used for transporting neighbours as much as it was for our use. I was born in a time and place of gross racial discrimination.</p>
 
 <p>The extended family that I was born into consisted of one great grandmother, two grandmothers, one grandfather, eighteen aunts and uncles, seventeen first cousins and many more beyond that. Meeting them took a while, but eventually my parents decided to return to the eastern states of Australia.</p>
 
-<p>After the return trip across the Nullarbor, they arrived on the NSW/VIC border to a freezing winter and were fully intent on travelling through to Queensland. However flu struck and they were convinced by relatives, of which there were many, to stay close to their kin. So the trip to Queensland was shelved. Sharing a very small three bedroom house with aunt uncle and four cousins.</p>
+<p>After the return trip across the Nullarbor, they arrived on the NSW/VIC border to a freezing winter and were fully intent on travelling through to Queensland. However flu struck and they were convinced by relatives, of which there were many, to stay close to their kin. So the trip to Queensland was shelved. Sharing a very small three bedroom house with an aunt, uncle and four cousins.</p>
 
 <p>Eventually a farm was purchased, one problem no house. While funds were saved for the house and during the building of the house we lived in the barn.  My memories of this time were of going to sleep on a wire camp bed in the barn, mother, father and sister on their own respective camp beds, kerosene lamps, the table with jam tins full of oil on the legs to stop ants, the car, now a racing green Morris Minor ute at the end of the barn, along with a blue heeler, three kelpies, and two cats.</p>
 
@@ -30,7 +32,8 @@
 
 <p>Sport was netball, vigaro, softball, athletics and swimming. How beautiful it was to go to the 25 metre pool on those extremely hot days. Discipline was a couple of cuts to the lower legs with a long ruler. A fall off the rafters of the shelter shed broke both bones in my left arm. We were sheltering from the rain.</p>
 
-<p>UPDATE: No more writing was present after this, but we'll update if we find more.</p>
+</p><em>That's where Michelle left her early life history at. She would have been around six years old when her brother was born. We'll do our best to fill in the following decades.</em>
+<br>
       
       <!-- CONTENT END -->
     </div>
