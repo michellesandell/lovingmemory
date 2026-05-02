@@ -6,7 +6,6 @@
     <div class="section details">
       <!-- CONTENT START -->
       <h1 class="title">Michelle's Life History</h1>
-
 <br>
 <h3>Written 15th July 2012, by Michelle</h3>
 
